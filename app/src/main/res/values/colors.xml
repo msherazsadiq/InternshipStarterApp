@@ -2,4 +2,43 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <!-- Light Mode Colors -->
+    <color name="light_primary">#FFC107</color>        <!-- Yellowish -->
+    <color name="light_on_primary">#000000</color>
+    <color name="light_primary_container">#FFECB3</color> <!-- Light yellowish -->
+    <color name="light_on_primary_container">#000000</color>
+
+    <color name="light_secondary">#FF5722</color>        <!-- Orangish -->
+    <color name="light_on_secondary">#FFFFFF</color>
+    <color name="light_secondary_container">#FFCCBC</color>
+    <color name="light_on_secondary_container">#000000</color>
+
+    <color name="light_background">#FFFFFF</color>     <!-- White -->
+    <color name="light_surface">#F5F5F5</color>        <!-- Light gray -->
+    <color name="light_on_surface">#000000</color>
+
+    <color name="light_error">#B00020</color>
+    <color name="light_on_error">#FFFFFF</color>
+
+
+    <!-- Dark Mode Colors -->
+    <color name="dark_primary">#FF9800</color>        <!-- Orange -->
+    <color name="dark_on_primary">#000000</color>
+    <color name="dark_primary_container">#FF5722</color> <!-- Darker Orange -->
+    <color name="dark_on_primary_container">#FFFFFF</color>
+
+    <color name="dark_secondary">#FF7043</color>        <!-- Light Orange -->
+    <color name="dark_on_secondary">#000000</color>
+    <color name="dark_secondary_container">#FFAB91</color>
+    <color name="dark_on_secondary_container">#000000</color>
+
+    <color name="dark_background">#121212</color>     <!-- Dark Gray -->
+    <color name="dark_surface">#1E1E1E</color>        <!-- Surface Dark Gray -->
+    <color name="dark_on_surface">#FFFFFF</color>
+
+    <color name="dark_error">#CF6679</color>
+    <color name="dark_on_error">#000000</color>
+
 </resources>

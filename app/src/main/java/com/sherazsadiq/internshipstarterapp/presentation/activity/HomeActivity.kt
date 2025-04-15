@@ -27,7 +27,7 @@ class HomeActivity : ComponentActivity() {
         binding.motivateButton.setOnClickListener {
             val quote=Quotes.getRandomQuote()
             MaterialAlertDialogBuilder(this)
-                .setTitle("Motivational Quote")
+                .setTitle(getString(R.string.motivation_title))
                 .setMessage(quote)
                 .setPositiveButton("OK") { dialog, _ ->
                     dialog.dismiss()

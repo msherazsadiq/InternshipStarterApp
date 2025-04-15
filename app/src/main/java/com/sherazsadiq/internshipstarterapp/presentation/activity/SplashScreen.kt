@@ -10,11 +10,20 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import com.sherazsadiq.internshipstarterapp.R
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 
 class SplashScreen : ComponentActivity() {
+    private var keepSplashOnScreen = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        installSplashScreen()
+        val splashScreen = installSplashScreen()
+
+        // Keep the splash screen visible while the condition is true
+        splashScreen.setKeepOnScreenCondition { keepSplashOnScreen }
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_splash_screen)
@@ -23,7 +32,12 @@ class SplashScreen : ComponentActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-            startActivity(Intent(this, HomeActivity::class.java))
+        // Delay using coroutine instead of Handler (cleaner)
+        lifecycleScope.launch {
+            delay(4000) // Wait 4 seconds
+            keepSplashOnScreen = false // This will now allow the splash to exit
+            startActivity(Intent(this@SplashScreen, HomeActivity::class.java))
             finish()
+        }
     }
 }
