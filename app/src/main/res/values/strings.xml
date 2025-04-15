@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">InternshipStarterApp</string>
+    <string name="greet_devs">Hello Android Developers!</string>
+    <string name="get_motivation">Get Motivation</string>
+</resources>
