@@ -23,3 +23,7 @@ A clean and modern Android Starter App built with Kotlin, MVVM, Material3, and A
 - Understood proper theming with DayNight modes
 
 
+
+## 📦 Download
+
+[Click here to download the APK](https://github.com/msherazsadiq/InternshipStarterApp/releases/download/v0.1.0/app.apk)
