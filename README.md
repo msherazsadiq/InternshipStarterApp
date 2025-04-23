@@ -26,4 +26,4 @@ A clean and modern Android Starter App built with Kotlin, MVVM, Material3, and A
 
 ## 📦 Download
 
-[Click here to download the APK](https://github.com/msherazsadiq/InternshipStarterApp/releases/download/v0.1.0/app.apk)
+[Click here to download the APK](https://github.com/msherazsadiq/Artico/releases/download/1.0.1/app-debug.apk)
